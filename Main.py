@@ -2,8 +2,6 @@ from tkinter import *
 
 main = Tk()
 
-main.geometry("500x500")
-
 left_frame = Frame(main)
 left_frame.grid(row=0, column=0, rowspan=2, sticky="nsew")
 
@@ -21,11 +19,13 @@ input_field.pack(fill="x", padx=10)
 right_frame = Frame(main)
 right_frame.grid(row=0, column=1, sticky="nsew")
 
-for i in range(4):
-    button = Button(right_frame, text=f"Button {i+1}")
-    button.grid(row=0, column=i, padx=10, pady=10)
+run_button = Button(right_frame, text="Run", fg="white", bg="green")
+run_button.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
+
+stop_button = Button(right_frame, text="Stop", fg="white", bg="red")
+stop_button.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
 
 console_log = Text(right_frame)
-console_log.grid(row=1, column=0, columnspan=4, padx=10, pady=10, sticky="nsew")
+console_log.grid(row=1, column=0, columnspan=2, padx=10, pady=10, sticky="nsew")
 
 main.mainloop()
