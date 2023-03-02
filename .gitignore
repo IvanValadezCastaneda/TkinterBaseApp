@@ -1,0 +1,32 @@
+Ignore Python bytecode files
+*.pyc
+
+Ignore Python cache directories
+pycache/
+
+Ignore the virtual environment directory
+venv/
+
+Ignore any compiled Python files
+*.pyc
+
+Ignore any local environment variables files
+.env
+
+Ignore any IDE files
+.vscode/
+.idea/
+
+Ignore any logs
+*.log
+
+Ignore any data or media files
+*.csv
+*.json
+*.jpg
+*.png
+
+Ignore any compiled Python files for distribution
+dist/
+build/
+*.egg-info/
